@@ -16,7 +16,7 @@ import com.zhj.commonbean.user.User
 @Route(path = "/businessmodule1/activity/ReadActivity")
 class ReadActivity : Activity() {
     @Autowired(name = "key1")
-    @JvmField//这里一定要加@JvmField，不然编译的时候会认为它是private的
+    @JvmField
     var key1 = 0L
     @Autowired(name = "key2")
     @JvmField
